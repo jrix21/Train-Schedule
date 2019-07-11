@@ -58,7 +58,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
 
  $("#trains-table> tbody").prepend("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" +
-  "every " + trainFrequency + " min" + "</td><td>" + arrival + "</td><td>" + minutes + " away" + "</td>");
+  "every " + trainFrequency + " min" + "</td><td>" + arrival + "</td><td>" + minutes + " mins away" + "</td>");
 }, function(errorObject) {
       console.log("Errors handled: " + errorObject.code);
     });
